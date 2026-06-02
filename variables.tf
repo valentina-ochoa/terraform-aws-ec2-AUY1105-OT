@@ -25,3 +25,15 @@ variable "instance_name" {
   type        = string
   default     = "secure-ec2"
 }
+
+variable "kms_deletion_window" {
+  description = "Dias para eliminacion de la KMS key"
+  type        = number
+  default     = 7
+}
+
+variable "log_retention_days" {
+  description = "Dias de retencion de logs en CloudWatch"
+  type        = number
+  default     = 365
+}
